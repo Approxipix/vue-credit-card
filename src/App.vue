@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <section class="App">
+    <CreditCardForm
+      v-model:cardName="creditCardData.cardName"
+      v-model:cardNumber="creditCardData.cardNumber"
+      v-model:cardMonth="creditCardData.cardMonth"
+      v-model:cardYear="creditCardData.cardYear"
+      v-model:cardCode="creditCardData.cardCode"
+    />
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import CreditCardForm from './components/CreditCardForm/CreditCardForm.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    components: {
+      CreditCardForm,
+    },
+    data() {
+      return {
+        creditCardData: {
+          cardName: '',
+          cardNumber: '',
+          cardMonth: '',
+          cardYear: '',
+          cardCode: ''
+        }
+      };
+    },
   }
-}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import "./assets/scss/index.scss";
+  @import "./App.scss";
 </style>

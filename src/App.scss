@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #2c3e50;
+  background-color: #e7eff6;
+
+  @media screen and (max-width: 360px) {
+    font-size: 15px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 128px 16px 64px;
+
+  @media screen and (max-width: 570px) {
+    padding: 128px 16px 16px;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding-top: 116px;
+  }
+
+  @media screen and (max-width: 360px) {
+    padding-top: 90px;
+  }
+}
