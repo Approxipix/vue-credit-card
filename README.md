@@ -1,5 +1,5 @@
 # Vue Netflix Clone
-My [credit interactive card](https://github.com/muhammed/vue-interactive-paycard) variation based on Vue.
+My [interactive credit card form](https://github.com/muhammed/vue-interactive-paycard) variation based on Vue.
 
 <div>
   <img alt="Last Commit" src="https://img.shields.io/github/last-commit/approxipix/vue-credit-card?color=2b9348">
