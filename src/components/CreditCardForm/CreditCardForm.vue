@@ -96,7 +96,7 @@
               id="v-card-code"
               class="CreditCardForm__input"
               placeholder="Enter code"
-              maxlength="4"
+              :maxlength="cardCodeMaxLength"
               :type="isCardCodeMasked ? 'password' : 'text'"
               :value="cardCode"
               @input="updateCardCode"
@@ -163,6 +163,10 @@
         if (!this.card) return regularCreditCardPlaceholder.length;
         const placeholdersLength = this.card.placeholders.map(placeholder => placeholder.length);
         return placeholdersLength.reduce((acc, cur) => acc > cur ? acc : cur);
+      },
+      cardCodeMaxLength() {
+        if (!this.card) return 3;
+        return this.card.code.length;
       },
       minCardYear() {
         return new Date().getFullYear();
