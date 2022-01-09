@@ -3,8 +3,10 @@ My [interactive credit card form](https://github.com/muhammed/vue-interactive-pa
 
 <div>
   <img alt="Last Commit" src="https://img.shields.io/github/last-commit/approxipix/vue-credit-card?color=2b9348">
-  <a href="https://david-dm.org/approxipix/vue-netflix-clone"><img src="https://david-dm.org/approxipix/vue-credit-card/status.svg" alt="Dependencies status" /></a>
-  <a href="https://github.com/approxipix/vue-credit-card/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/elangosundar/awesome-README-templates?color=2b9348" alt="License Badge"/></a>
+  <img src="https://img.shields.io/depfu/approxipix/vue-credit-card" alt="Dependencies status" />
+  <a href="https://github.com/approxipix/vue-credit-card/blob/master/LICENSE.md">
+    <img src="https://img.shields.io/github/license/elangosundar/awesome-README-templates?color=2b9348" alt="License Badge"/>
+  </a>
 </div>
 
 ## Live Demo
