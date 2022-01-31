@@ -1,4 +1,4 @@
-# Vue Netflix Clone
+# Vue Credit Card
 My [interactive credit card form](https://github.com/muhammed/vue-interactive-paycard) variation based on Vue.
 
 <div>
